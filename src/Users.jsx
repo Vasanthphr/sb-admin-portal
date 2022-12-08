@@ -21,8 +21,12 @@ function Users() {
 
   let userDelete = async (id)=>{
     try {
-      await axios.delete(`https://62cb8d8d3e924a01286858d1.mockapi.io/users/${id}`)
-      loadData();
+      let ask = window.confirm("Are you sure? Do you want to delete this data?")
+      if(ask){
+        await axios.delete(`https://62cb8d8d3e924a01286858d1.mockapi.io/users/${id}`)
+        loadData();
+      }
+     
     } catch (error) {
       
     }
