@@ -38,7 +38,7 @@ function Users() {
         <h1 class="h3 mb-0 text-gray-800">Users</h1>
         <Link
           to="/Portal/create-user"
-          class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+          class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm"
         >
           <i class="fas fa-download fa-sm text-white-50"></i> Create Users
         </Link>

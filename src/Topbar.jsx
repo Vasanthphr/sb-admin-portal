@@ -26,7 +26,7 @@ function Topbar() {
             aria-describedby="basic-addon2"
           />
           <div class="input-group-append">
-            <button class="btn btn-primary" type="button">
+            <button class="btn btn-info" type="button">
               <i class="fas fa-search fa-sm"></i>
             </button>
           </div>
@@ -247,10 +247,7 @@ function Topbar() {
             {context.username}
             </span>
           
-            <img
-              class="img-profile rounded-circle"
-              src=""
-            />
+           
           </Link>
         </li>
       </ul>

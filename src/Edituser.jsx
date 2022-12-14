@@ -134,7 +134,7 @@ loadUser()
             <div className="col-lg-6">
               <label></label>
               <input
-                className="btn-primary mt-2 "
+                className="btn-info mt-2 "
                 type="submit"
                 value="submit"
                 disabled={!formik.isValid}

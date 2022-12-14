@@ -16,7 +16,7 @@ let login = ()=>{
     }
 }; 
 
-    return <body class="bg-gradient-primary">
+    return <body class="bg-gradient">
     
         <div class="container">
     
