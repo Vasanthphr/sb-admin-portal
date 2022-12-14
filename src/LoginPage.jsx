@@ -1,14 +1,17 @@
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import UserContex from './useContext'
 
 function LoginPage() {
-
+let context=useContext(UserContex)
 let navigate = useNavigate();
 let username = "abc";
 let password = "123";
 let login = ()=>{
     if (username == "abc" && password == "123"){
+        context.setUsername("Hello")
         navigate ('/portal/dashboard')
-    }else{
+    }else{ 
         alert("wrong Credientials")
     }
 }; 

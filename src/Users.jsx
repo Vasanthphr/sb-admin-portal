@@ -21,8 +21,12 @@ function Users() {
 
   let userDelete = async (id)=>{
     try {
-      await axios.delete(`https://62cb8d8d3e924a01286858d1.mockapi.io/users/${id}`)
-      loadData();
+      let ask = window.confirm("Are you sure? Do you want to delete this data?")
+      if(ask){
+        await axios.delete(`https://62cb8d8d3e924a01286858d1.mockapi.io/users/${id}`)
+        loadData();
+      }
+     
     } catch (error) {
       
     }
@@ -34,7 +38,7 @@ function Users() {
         <h1 class="h3 mb-0 text-gray-800">Users</h1>
         <Link
           to="/Portal/create-user"
-          class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+          class="d-none d-sm-inline-block btn btn-sm btn-warning shadow-sm"
         >
           <i class="fas fa-download fa-sm text-white-50"></i> Create Users
         </Link>
@@ -46,7 +50,7 @@ function Users() {
           </div>
         </div> : <div class="card shadow mb-4">
           <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+            <h6 class="m-0 font-weight-bold text-warning">DataTables Example</h6>
           </div>
           <div class="card-body">
             <div class="table-responsive">

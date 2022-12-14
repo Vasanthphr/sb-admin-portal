@@ -107,7 +107,7 @@ function CreateUser() {
             <div className="col-lg-6">
               <label></label>
               <input
-                className="btn-primary mt-2 "
+                className="btn-warning mt-2 "
                 type="submit"
                 value="submit"
                 disabled={!formik.isValid}
